@@ -4,7 +4,7 @@ const crypto = require('crypto');
 
 // Your API configuration
 const API_KEY = 'YOUR_API_KEY_HERE';
-const API_URL = 'https://autholas.nicholasdevs.xyz/api/auth';
+const API_URL = 'https://autholas.nicholasdevs.my.id/api/auth';
 
 function handleAuthError(errorCode, errorMessage) {
     const errorMessages = {
@@ -150,4 +150,5 @@ module.exports = {
     getHardwareID,
     handleAuthError,
     question
+
 };
