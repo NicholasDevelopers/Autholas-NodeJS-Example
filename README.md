@@ -239,13 +239,13 @@ For production, use environment variables:
 ```javascript
 // In autholas.js
 const API_KEY = process.env.AUTHOLAS_API_KEY || 'YOUR_API_KEY_HERE';
-const API_URL = process.env.AUTHOLAS_API_URL || 'https://autholas.nicholasdevs.xyz/api/auth';
+const API_URL = process.env.AUTHOLAS_API_URL || 'https://autholas.nicholasdevs.my.id/api/auth';
 ```
 
 Create a `.env` file:
 ```bash
 AUTHOLAS_API_KEY=your_actual_api_key_here
-AUTHOLAS_API_URL=https://autholas.nicholasdevs.xyz/api/auth
+AUTHOLAS_API_URL=https://autholas.nicholasdevs.my.id/api/auth
 ```
 
 Install and use dotenv:
@@ -290,4 +290,5 @@ const axios = require('axios');
 
 async function testConnection() {
     try {
+
         const response = await axios.get('https://httpbin.org/status/200', { timeout: 5000 });
